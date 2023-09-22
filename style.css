@@ -56,28 +56,33 @@ body {
   font-size: 1.5rem;
   color: #be3144;
 }
+
 .projectsContainer {
   background-color: #45567df8;
   padding-top: 3vh;
 }
-img {
-  width: 45vh;
-  height: 40vh;
+.projectsContainer h1 {
+  text-align: center;
+  color: white;
+}
+.line {
+  width: 40%;
+  margin-left: 30%;
 }
 .projects {
-  width: 100vh;
-  margin-left: 15%;
+  display: grid;
   padding-top: 4vh;
-}
-.rowone {
-  display: flex;
-}
-.rowtwo {
-  display: flex;
+  margin: 0 auto;
+  gap: 2rem;
 }
 .container {
-  margin: 0 30px 30px 0;
+  padding: 20px;
+  text-align: center;
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+img {
+  width: 35vh;
+  height: 35vh;
 }
 .container h2 {
   font-size: 1.1rem;
@@ -87,13 +92,15 @@ img {
   padding: 15px;
   color: white;
 }
-.projectsContainer h1 {
-  text-align: center;
-  color: white;
+@media (min-width: 900px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-.line {
-  width: 40%;
-  margin-left: 30%;
+@media (min-width: 1400px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .connect {
@@ -140,3 +147,20 @@ img {
   font-weight: 300;
   font-size: 1.2rem;
 }
+
+/* .projects {
+  width: 100vh;
+  margin-left: 15%;
+  padding-top: 4vh;
+}
+.rowone {
+  display: flex;
+}
+.rowtwo {
+  display: flex;
+} */
+/* .container {
+  margin: 0 30px 30px 0;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+/* */
