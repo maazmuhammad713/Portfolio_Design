@@ -11,11 +11,15 @@ body {
   justify-content: end;
   align-items: center;
   width: 100%;
-  color: white;
+
   height: auto;
   background-color: #be3144;
   position: fixed;
   top: 0;
+}
+.header a {
+  color: white;
+  text-decoration: none;
 }
 .menu {
   margin-right: 25px;
